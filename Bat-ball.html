@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>bat animation</title>
+    <style>
+      .ball{
+        height: 14px;
+        width: 14px;
+        background: red;
+        border-radius:50%;
+        position: relative;
+        left:226px ;
+        bottom: 120px;
+        transition: transform 0.2s ease-in-out 0.2s;
+      }
+      .field:hover .ball{
+        transform: translate(140px, -80px);
+      }
+      .bat{
+        margin: 40px 0px;
+        height: 180px;
+        width: 130px;
+        transition: transform 0.2s ease-in-out;
+        
+      }
+      .field:hover .bat{
+        transform: rotate(-60deg);
+        transform-origin: 100% 0%;
+      }
+     .field{
+       margin: 0;
+     }
+    </style>
+  </head>
+  <body>
+      <div class="field">
+          
+            <img class="bat" src="bat2.jpg" alt="" />
+          
+          <div class="ball">
+            
+          </div>
+      </div>
+  </body>
+</html>
